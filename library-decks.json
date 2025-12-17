@@ -1,0 +1,172 @@
+[
+  {
+    "id": "deck1",
+    "title": "Java Basics",
+    "subtitle": "Master core Java concepts quickly",
+    "cards": [
+      {"id": "j1", "question": "What is JVM?", "answer": "Java Virtual Machine, runs Java bytecode."},
+      {"id": "j2", "question": "What is JDK?", "answer": "Java Development Kit, contains tools to develop Java apps."},
+      {"id": "j3", "question": "What is JRE?", "answer": "Java Runtime Environment, runs Java programs."},
+      {"id": "j4", "question": "What is a class?", "answer": "Blueprint for objects in Java."},
+      {"id": "j5", "question": "What is an object?", "answer": "Instance of a class."},
+      {"id": "j6", "question": "What is inheritance?", "answer": "Mechanism to acquire properties of another class."},
+      {"id": "j7", "question": "What is polymorphism?", "answer": "Ability of an object to take many forms."},
+      {"id": "j8", "question": "What is encapsulation?", "answer": "Hiding internal data using private variables."},
+      {"id": "j9", "question": "What is abstraction?", "answer": "Hiding implementation details using abstract classes/interfaces."},
+      {"id": "j10", "question": "What is a constructor?", "answer": "Special method to initialize objects."}
+    ]
+  },
+  {
+    "id": "deck2",
+    "title": "Animals Trivia",
+    "subtitle": "Catch fun facts about the animal kingdom",
+    "cards": [
+      {"id": "a1", "question": "Largest land animal?", "answer": "Elephant."},
+      {"id": "a2", "question": "Fastest land animal?", "answer": "Cheetah."},
+      {"id": "a3", "question": "Largest mammal?", "answer": "Blue Whale."},
+      {"id": "a4", "question": "Which bird can’t fly?", "answer": "Ostrich."},
+      {"id": "a5", "question": "Animal that lays eggs?", "answer": "Platypus."},
+      {"id": "a6", "question": "King of the Jungle?", "answer": "Lion."},
+      {"id": "a7", "question": "Animal with most hearts?", "answer": "Octopus (3 hearts)."},
+      {"id": "a8", "question": "Fastest aquatic animal?", "answer": "Sailfish."},
+      {"id": "a9", "question": "Tallest animal?", "answer": "Giraffe."},
+      {"id": "a10", "question": "Only mammal that flies?", "answer": "Bat."}
+    ]
+  },
+  {
+    "id": "deck3",
+    "title": "HTML Essentials",
+    "subtitle": "Quickly grasp HTML fundamentals",
+    "cards": [
+      {"id": "h1", "question": "What does HTML stand for?", "answer": "HyperText Markup Language."},
+      {"id": "h2", "question": "What is an element?", "answer": "A building block of HTML."},
+      {"id": "h3", "question": "What is an attribute?", "answer": "Extra information provided inside a tag."},
+      {"id": "h4", "question": "Tag for paragraph?", "answer": "<p>"},
+      {"id": "h5", "question": "Tag for headings?", "answer": "<h1> to <h6>"},
+      {"id": "h6", "question": "How to add a link?", "answer": "<a href='url'>Link</a>"},
+      {"id": "h7", "question": "Tag for image?", "answer": "<img src='url' alt='text'>"},
+      {"id": "h8", "question": "Tag for list?", "answer": "<ul>, <ol>, <li>"},
+      {"id": "h9", "question": "Tag for table?", "answer": "<table>, <tr>, <td>, <th>"},
+      {"id": "h10", "question": "HTML comment syntax?", "answer": "<!-- comment -->"}
+    ]
+  },
+  {
+    "id": "deck4",
+    "title": "CSS Basics",
+    "subtitle": "Style your webpages effortlessly",
+    "cards": [
+      {"id": "c1", "question": "What is CSS?", "answer": "Cascading Style Sheets."},
+      {"id": "c2", "question": "Selector meaning?", "answer": "Specifies which element to style."},
+      {"id": "c3", "question": "Property meaning?", "answer": "What aspect of element to style."},
+      {"id": "c4", "question": "Value meaning?", "answer": "The setting of the property."},
+      {"id": "c5", "question": "Class selector syntax?", "answer": ".classname"},
+      {"id": "c6", "question": "ID selector syntax?", "answer": "#idname"},
+      {"id": "c7", "question": "Inline style example?", "answer": "<p style='color:red;'>Text</p>"},
+      {"id": "c8", "question": "Hex color code?", "answer": "#RRGGBB"},
+      {"id": "c9", "question": "Font property?", "answer": "font-family, font-size, font-weight"},
+      {"id": "c10", "question": "Box model components?", "answer": "Margin, border, padding, content."}
+    ]
+  },
+  {
+    "id": "deck5",
+    "title": "JavaScript Intro",
+    "subtitle": "Start coding dynamic webpages",
+    "cards": [
+      {"id": "js1", "question": "What is JS?", "answer": "JavaScript, a programming language for the web."},
+      {"id": "js2", "question": "Difference between var, let, const?", "answer": "Scope and mutability differences."},
+      {"id": "js3", "question": "What is a function?", "answer": "Reusable block of code."},
+      {"id": "js4", "question": "What is an array?", "answer": "Ordered collection of items."},
+      {"id": "js5", "question": "What is an object?", "answer": "Key-value pairs in JS."},
+      {"id": "js6", "question": "What is DOM?", "answer": "Document Object Model."},
+      {"id": "js7", "question": "How to select element?", "answer": "document.querySelector or getElementById"},
+      {"id": "js8", "question": "What is event listener?", "answer": "Function triggered by an event."},
+      {"id": "js9", "question": "Arrow function?", "answer": "() => {} shorthand function"},
+      {"id": "js10", "question": "JS comment?", "answer": "// for single line, /* */ for multi-line"}
+    ]
+  },
+  {
+    "id": "deck6",
+    "title": "Bootstrap 5",
+    "subtitle": "Quick UI styling and layout",
+    "cards": [
+      {"id": "b1", "question": "Bootstrap meaning?", "answer": "Front-end framework for responsive design."},
+      {"id": "b2", "question": "Container class?", "answer": ".container or .container-fluid"},
+      {"id": "b3", "question": "Grid system?", "answer": "12-column layout system."},
+      {"id": "b4", "question": "Row class?", "answer": ".row"},
+      {"id": "b5", "question": "Column class?", "answer": ".col, .col-6 etc."},
+      {"id": "b6", "question": "Responsive breakpoints?", "answer": "sm, md, lg, xl, xxl"},
+      {"id": "b7", "question": "Button class?", "answer": ".btn, .btn-primary, .btn-success etc."},
+      {"id": "b8", "question": "Card class?", "answer": ".card"},
+      {"id": "b9", "question": "Navbar class?", "answer": ".navbar, .navbar-expand-lg"},
+      {"id": "b10", "question": "Text color class?", "answer": ".text-white, .text-primary etc."}
+    ]
+  },
+  {
+    "id": "deck7",
+    "title": "Git Basics",
+    "subtitle": "Version control made simple",
+    "cards": [
+      {"id": "g1", "question": "What is Git?", "answer": "Version control system."},
+      {"id": "g2", "question": "What is commit?", "answer": "Snapshot of changes."},
+      {"id": "g3", "question": "What is branch?", "answer": "Separate line of development."},
+      {"id": "g4", "question": "What is merge?", "answer": "Combine branches."},
+      {"id": "g5", "question": "Clone meaning?", "answer": "Copy repository."},
+      {"id": "g6", "question": "Push meaning?", "answer": "Upload changes to remote."},
+      {"id": "g7", "question": "Pull meaning?", "answer": "Download changes from remote."},
+      {"id": "g8", "question": "Remote meaning?", "answer": "Online repository URL."},
+      {"id": "g9", "question": "Git init?", "answer": "Initialize a repo locally."},
+      {"id": "g10", "question": "Git status?", "answer": "Shows modified, staged, untracked files."}
+    ]
+  },
+  {
+    "id": "deck8",
+    "title": "Python Basics",
+    "subtitle": "Learn Python programming quickly",
+    "cards": [
+      {"id": "p1", "question": "What is Python?", "answer": "High-level programming language."},
+      {"id": "p2", "question": "Python interpreter?", "answer": "Executes Python code."},
+      {"id": "p3", "question": "Python variable?", "answer": "Stores data value."},
+      {"id": "p4", "question": "Python list?", "answer": "Ordered collection."},
+      {"id": "p5", "question": "Python tuple?", "answer": "Immutable collection."},
+      {"id": "p6", "question": "Python dict?", "answer": "Key-value mapping."},
+      {"id": "p7", "question": "Python loop?", "answer": "for and while loops."},
+      {"id": "p8", "question": "Python function?", "answer": "def keyword defines function."},
+      {"id": "p9", "question": "Python class?", "answer": "Blueprint for objects."},
+      {"id": "p10", "question": "Python comment?", "answer": "# single line, ''' multi-line '''"}
+    ]
+  },
+  {
+    "id": "deck9",
+    "title": "Algorithms",
+    "subtitle": "Boost problem-solving skills",
+    "cards": [
+      {"id": "al1", "question": "What is an algorithm?", "answer": "Step-by-step solution to a problem."},
+      {"id": "al2", "question": "Big O notation?", "answer": "Time/space complexity of an algorithm."},
+      {"id": "al3", "question": "Linear search?", "answer": "Check each element sequentially."},
+      {"id": "al4", "question": "Binary search?", "answer": "Divide and conquer search on sorted array."},
+      {"id": "al5", "question": "Bubble sort?", "answer": "Compare and swap adjacent elements."},
+      {"id": "al6", "question": "Merge sort?", "answer": "Divide and conquer sorting."},
+      {"id": "al7", "question": "Quick sort?", "answer": "Partition and sort recursively."},
+      {"id": "al8", "question": "Recursion meaning?", "answer": "Function calls itself."},
+      {"id": "al9", "question": "Greedy algorithm?", "answer": "Chooses local optimum at each step."},
+      {"id": "al10", "question": "Dynamic programming?", "answer": "Optimal solution using previous results."}
+    ]
+  },
+  {
+    "id": "deck10",
+    "title": "Databases",
+    "subtitle": "Understand database essentials",
+    "cards": [
+      {"id": "db1", "question": "What is a database?", "answer": "Structured data storage system."},
+      {"id": "db2", "question": "SQL meaning?", "answer": "Structured Query Language."},
+      {"id": "db3", "question": "Primary key?", "answer": "Unique identifier for a table row."},
+      {"id": "db4", "question": "Foreign key?", "answer": "References primary key in another table."},
+      {"id": "db5", "question": "CRUD operations?", "answer": "Create, Read, Update, Delete."},
+      {"id": "db6", "question": "Normalization?", "answer": "Organize data to reduce redundancy."},
+      {"id": "db7", "question": "Denormalization?", "answer": "Adding redundancy for speed."},
+      {"id": "db8", "question": "Index in DB?", "answer": "Helps speed up queries."},
+      {"id": "db9", "question": "Transaction?", "answer": "Sequence of operations executed as a unit."},
+      {"id": "db10", "question": "SQL JOIN?", "answer": "Combine rows from two tables."}
+    ]
+  }
+]

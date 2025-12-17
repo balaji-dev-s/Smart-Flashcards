@@ -1,0 +1,18 @@
+[deckList.js]  --> displays all decks --> Study --> [deckDetail.js]
+                                      --> Edit  --> [editDeck.js]
+                                      --> Export/Download JSON
+                                      --> Delete
+
+[flashcard.js] --> Create new deck --> Save --> [storage.js] --> deckList.js
+
+[library.js]   --> Show library decks --> Add deck --> [storage.js] --> deckList.js
+
+[faq.js]       --> Toggle FAQ questions (UI only)
+
+
+----->storage.js is the central hub for all deck CRUD operations
+----->deckList.js is the main hub / dashboard
+----->flashcard.js and editDeck.js are forms for creating or editing decks
+----->deckDetail.js is the interactive study view
+----->library.js is optional for importing decks
+----->faq.js is UI enhancement

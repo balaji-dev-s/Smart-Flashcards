@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart Flashcards Web App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./CSS/about-proj-style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <!-- NAVIGATION SECTION -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg sticky-top">
+    <div class="container">
+      <!-- Branding-logo -->
+      <a class="navbar-brand fw-bold" href="index.html">Smart Flashcards</a>
+      <!-- Hamburger menu button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMaster"
+        aria-controls="navbarMaster" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="navbarMaster">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="create-deck.html">Create Deck</a></li>
+          <li class="nav-item"><a class="nav-link" href="library.html">Library</a></li>
+           <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link active" href="project-info.html">About Project</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- about-desc -->
+  <div class="container mb-5">
+    <h1 class="fs-1 fw-bold mb-4 mt-5" id="hero-heading">Smart Flashcards - Study Smarter, Not Harder.</h1>
+    <p class="text-light fs-5 mb-4 pb-4"><b>Smart Flashcards</b> is a completely dynamic, interactive flashcard
+      application that I developed using <b>HTML, CSS, Bootstrap, and vanilla JavaScript.</b> I created it with one goal
+      in mind: to
+      make studying easier and more effective by using spaced repetition, a proven technique that helps learners
+      remember information for a much longer time.
+      <br><br>
+      Users can create as many decks as they want, organize their cards, and move everything around using smooth
+      drag-and-drop interactions. They can study through a user-friendly flashcard view, access a library of
+      ready-to-use decks, and export their data as JSON for easy backup.
+      <br><br>
+      This project shows my ability to build a complete, user-friendly learning tool from the ground up, and it also
+      highlights my strengths in <b>UI design, UX thinking, front-end development, and problem-solving.</b>
+    </p>
+    <a href="#" class="btn btn-primary" id="createDeckBtn">
+      View on Github<i class="bi bi-github me-2 ms-2"></i>
+    </a>
+  </div>
+
+  <!-- Web Technologies Used - section -->
+  <div class="container">
+    <h4 class="heading fw-bold fs-4 mb-4">Web Technologies Used</h4>
+    <div class="container d-flex flex-wrap mb-4" id="web-tech-container">
+      <div>
+        <h6 class="sub-heading text-white fs-5 fw-semibold">Frontend</h6>
+        <p class="paragraph-content text-white fs-6  mb-4">● HTML5<br>● CSS3<br>● Bootstrap 5.3<br>● Vanilla Javascript
+          (ES6+)</p>
+      </div>
+      <div>
+        <h6 class="sub-heading text-white fs-5 fw-semibold">Data Storage</h6>
+        <p class="paragraph-content text-white fs-6  mb-4">● LocalStorage<br>● JSON
+        </p>
+      </div>
+      <div>
+        <h6 class="sub-heading text-white fs-5 fw-semibold">UI Libraries</h6>
+        <p class="paragraph-content text-white fs-6  mb-4">● Custom CSS<br>● bootstrap Components<br>● SortableJS
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tools Used -->
+  <div class="container">
+    <h4 class="heading fw-bold fs-4 mb-4">Tools Used</h4>
+    <p class="paragraph-content text-white fs-6  mb-5">● VS Code - development<br>
+      ● Chrome DevTools - debugging + testing<br>
+      ● Direct Coding - UI planning & component layout<br>
+      ● Git & GitHub - version control<br>
+      ● JSON Viewer - data structure validation</p>
+  </div>
+
+  <!--UX Philosophy Behind the Design -->
+  <div class="container">
+    <h4 class="heading fw-bold fs-4 mb-4">UX Philosophy Behind the Design</h4>
+    <p class="paragraph-content text-white fs-6  mb-5">● Minimal distractions so users stay focused.<br>
+      ● Large readable typography for comfortable long sessions.<br>
+      ● Clear visual hierarchy for easy navigation.<br>
+      ● Intuitive button placement (Create Deck, Add From Library).<br>
+      ● Empty states to guide new users.<br>
+      ● Smooth animations to enhance user experience without overwhelming.</p>
+  </div>
+
+  <!--Color Palette -->
+  <div class="container mb-4">
+    <div class="d-flex flex-wrap gap-5 pb-4">
+      <div
+        class="color-palette-card color-card-1 d-flex justify-content-center align-items-center fw-semibold text-white fs-5">
+        #A2B2EE</div>
+      <div
+        class="color-palette-card color-card-2 d-flex justify-content-center align-items-center fw-semibold text-white fs-5">
+        #849BEC</div>
+      <div
+        class="color-palette-card color-card-3 d-flex justify-content-center align-items-center fw-semibold text-white fs-5">
+        #212529</div>
+      <div
+        class="color-palette-card color-card-4 d-flex justify-content-center align-items-center fw-semibold text-white fs-5">
+        #26292B</div>
+    </div>
+  </div>
+
+  <!-- Key features- SECTION -->
+  <div class="container">
+    <h4 class="heading fw-bold fs-4 mb-4">🚀 Key Features</h4>
+    <h6 class="sub-heading text-white fs-5 fw-semibold">1. Create, Edit & Delete Decks</h6>
+    <p class="paragraph-content text-white fs-6  mb-4">Users can create new decks, update them as needed, and delete
+      them anytime for better organization.</p>
+
+    <h6 class="sub-heading text-white fs-5 fw-semibold">2. Drag & Drop Reordering</h6>
+    <p class="paragraph-content text-white fs-6 mb-4">Reorder both cards and decks using intuitive drag-and-drop
+      interactions.
+    </p>
+
+    <h6 class="sub-heading text-white fs-5 fw-semibold">3.Export Decks (JSON)</h6>
+    <p class="paragraph-content text-white fs-6 mb-4">Easily back up or share decks using export functionality.
+    </p>
+
+    <h6 class="sub-heading text-white fs-5 fw-semibold">4. Pre-Built Library)</h6>
+    <p class="paragraph-content text-white fs-6 mb-4">In-built decks are provided that users can add to their own
+      collection with one click.
+    </p>
+
+    <h6 class="sub-heading text-white fs-5 fw-semibold">5. Mark Difficulty: Easy / Medium / Hard</h6>
+    <p class="paragraph-content text-white fs-6 mb-4">Each card supports difficulty ratings for spaced repetition
+      accuracy.
+    </p>
+
+    <h6 class="sub-heading text-white fs-5 fw-semibold">6. Progress Tracking</h6>
+    <p class="paragraph-content text-white fs-6 mb-4">Users can view:<br>● Cards studied<br>● Accuracy<br>● Upcoming
+      review
+      sessions<br>● Learned vs unlearned cards
+    </p>
+
+    <h6 class="sub-heading text-white fs-5 fw-semibold">7. Smooth & Clean UI</h6>
+    <p class="paragraph-content text-white fs-6 mb-4 pb-4">Responsive layouts, animated flashcards, shadows,
+      transitions, and
+      well-structured components built with modern UI/UX patterns.
+    </p>
+  </div>
+
+  <!-- What I Learned From Building Smart Flashcards -->
+  <div class="container">
+    <h4 class="heading fw-bold fs-4 mb-4">What I Learned From Building Smart Flashcards</h4>
+    <p class="paragraph-content text-white fs-5 mb-4 pb-4">Building Smart Flashcards helped me grow quickly as a
+      frontend developer. I became more confident with JavaScript by handling real state management, DOM updates,
+      drag-and-drop actions, and LocalStorage for saving data. I also strengthened my UI and UX skills by
+      designing clean layouts, smooth navigation, and meaningful empty states that feel intuitive. Along the way, I
+      learned how to structure code better with modular JavaScript and reusable components, while solving real issues
+      like edge cases, responsiveness, and data persistence. Overall, this project reflects how I think, design, and
+      build, and it shows my ability to turn an idea into a polished, fully working product.</p>
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer class=" text-white pt-4 pb-2 mt-5">
+    <div class="container">
+
+      <!-- Brand Logo -->
+      <a class="navbar-brand fw-bold fs-4" href="index.html">Smart Flashcards</a>
+
+      <!-- Navigation Links -->
+      <ul class="list-unstyled">
+        <li class="mb-1"><a href="index.html" class="footer-link text-white text-decoration-none">Home</a></li>
+        <li class="mb-1"><a href="create-deck.html" class="footer-link text-white text-decoration-none">Create Deck</a>
+        </li>
+        <li class="mb-1"><a href="library.html" class="footer-link text-white text-decoration-none">Add From Library</a>
+        </li>
+        <li class="mb-1"><a href="library.html" class="footer-link text-white text-decoration-none">Library</a></li>
+        <li class="mb-1"><a href="faq.html" class="footer-link text-white text-decoration-none">FAQ</a></li>
+        <li class="mb-1"><a href="project-info.html" class="footer-link text-white text-decoration-none">About
+            Project</a></li>
+
+      </ul>
+
+      <!-- Copyright -->
+      <p class="mt-3 mb-0">© 2025 Smart Flashcards. <b>Project By Balaji S | <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=balajishanmugam1403@gmail.com"
+            class="text-white">balajishanmugam1403@gmail.com</a>.</b> All rights reserved.</p>
+      <p><a href="/LICENSE" target="_blank">MIT License</a></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

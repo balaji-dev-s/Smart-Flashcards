@@ -1,0 +1,180 @@
+1. storage.js – Core Data Layer
+Purpose: Centralized storage for all decks in localStorage. Provides functions to:
+
+--->Get all decks (getDecks)
+--->Add a new deck (addDeck)
+--->Delete a deck (deleteDeck)
+--->Get a deck by its ID (getDeckById)
+--->Reorder decks (reorderDecks)
+--->Generate unique IDs (generateId)
+
+Usage in other files:
+
+deckList.js, flashcard.js, editDeck.js, deckDetail.js, and library.js 
+all depend on storage.js to fetch, update, or save deck data.
+
+Think of it as a database layer for your browser app.
+
+/-----------------------------/
+
+2. deckList.js – Deck Dashboard
+
+Purpose: Display all decks the user has created, and allow operations on them.
+
+Main features:
+
+--->Render all saved decks using Storage.getDecks()
+--->Display empty state if no decks exist
+--->Add Study, Export JSON, Edit, and Delete buttons
+--->Enable drag-and-drop reordering of decks using jQuery UI Sortable
+--->Initialize Bootstrap tooltips
+
+Workflow:
+
+--->On page load (DOMContentLoaded), call renderDecks().
+--->For each deck:
+        Create a card element showing title, subtitle, and number of cards
+--->Attach button handlers:
+        Study → navigates to deckDetail.js with deck ID in URL
+--->Export JSON → download deck as .json
+--->Edit → navigates to editDeck.js with deck ID
+--->Delete → removes deck from localStorage via Storage.deleteDeck()
+--->Enable drag-and-drop → update new order in storage via Storage.reorderDecks()
+--->Interaction with other files:
+        Clicking Study → deckDetail.js
+        Clicking Edit → editDeck.js
+        Buttons call functions in storage.js
+
+/-----------------------------/
+
+3. flashcard.js – Create New Deck
+
+Purpose: Let users create a new deck with multiple cards.
+
+Main features:
+
+--->Inputs for deck title, subtitle, and multiple cards
+--->Add/remove cards dynamically
+--->Drag-and-drop sorting of cards
+--->Validate deck before saving
+--->Save new deck to localStorage using Storage.addDeck()
+
+Workflow:
+
+--->Page initializes with 3 default cards
+--->User can:
+--->Add new cards
+--->Drag cards to reorder
+--->Fill in questions and answers
+--->Click Save Deck → gather data → generate unique IDs → store deck in localStorage
+
+Interaction:
+
+--->Uses storage.js to add the new deck
+--->After saving, user returns to deckList.js (homepage)
+
+/-----------------------------/
+
+4. editDeck.js – Edit Existing Deck
+
+Purpose: Modify a deck that already exists.
+
+Main features:
+
+--->Fetch deck from Storage.getDeckById() using ID from URL
+--->Render title, subtitle, and existing cards
+--->Add new cards
+--->Drag-and-drop sorting
+--->Update deck in localStorage
+
+Workflow:
+
+--->On page load: get deck ID from URL → fetch deck
+--->Render deck info in inputs and cards
+--->User can:
+              Add/edit cards
+              Drag to reorder
+              Update deck title/subtitle
+              Click Update → save changes to localStorage
+
+Interaction:
+
+Depends on storage.js for fetching/updating deck
+
+Redirects back to deckList.js after update
+
+/-----------------------------/
+
+5. deckDetail.js – Study / Flashcard View
+
+Purpose: Interactive study mode with cards, flip animation, progress tracking, and timer.
+
+Main features:
+
+--->Load deck using ID from URL → Storage.getDeckById()
+--->Render cards one at a time
+--->Flip cards to reveal answer
+--->Mark cards as learned
+--->Track difficulty (easy/hard)
+--->Timer for study session
+--->Progress bar
+--->Completion overlay
+
+Workflow:
+
+--->Load deck → initialize card state (learned/difficulty)
+--->Render current card → handle flipping and buttons
+
+Navigation via:
+
+--->Next/Prev buttons
+--->Keyboard arrows
+--->Touch swipe on mobile
+--->Track progress → save to localStorage (DECK_KEY)
+--->When all cards are learned → show completion overlay
+--->Overlay options: Study again or Go home
+
+Interaction:
+
+--->Uses storage.js for initial deck
+--->Updates localStorage for progress (not deck structure)
+--->Interacts with deck cards dynamically
+
+/--------------------/
+
+6. library.js – Import Library Decks
+
+Purpose: Let users browse pre-made decks from a JSON library and add them to their own collection.
+
+Main features:
+
+--->Fetch library-decks.json
+--->Render decks with Add Deck button
+--->Save selected deck to user’s localStorage collection
+
+Workflow:
+
+--->On page load → fetch library decks
+--->Render each deck → show Add Deck button
+--->When clicked → use Storage.addDeck() → alert + redirect to deckList.js
+
+Interaction:
+
+--->Depends on storage.js for saving imported decks
+--->Provides read-only templates users can copy
+
+/--------------------/
+
+7. faq.js – FAQ Toggle
+
+Purpose: UI enhancement for FAQ section
+
+Workflow:
+
+--->Select all .faq-item
+--->Add click listener to .faq-question inside each item
+--->Toggle .active class → show/hide answer
+
+Interaction:
+
+Purely UI, no storage or deck interaction

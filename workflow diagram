@@ -1,0 +1,35 @@
+ ┌─────────────┐
+ │ index.html  │  ← Home page / Deck List
+ └─────┬───────┘
+       │
+       │ loads
+       ▼
+ ┌─────────────┐
+ │ deckList.js │  ← Shows all decks
+ └─────┬───────┘
+       │ uses Storage to:
+       │  • getDecks()
+       │  • reorderDecks()
+       │  • deleteDeck(id)
+       ▼
+ ┌─────────────┐
+ │ storage.js  │  ← central storage (localStorage)
+ └─────┬───────┘
+       │ stores decks as JSON
+       ▼
+ ┌─────────────┐
+ │ editDeck.js │  ← Edit deck page
+ └─────┬───────┘
+       │ gets deck by id
+       │ updates deck and saves to Storage
+       ▼
+ ┌──────────────┐
+ │ deckDetail.js│ ← Study page
+ └──────────────┘
+       │ gets deck by id
+       │ tracks learned cards
+       │ saves progress locally (localStorage)
+       ▼
+ ┌─────────────┐
+ │ storage.js  │  ← Saves progress if needed
+ └─────────────┘

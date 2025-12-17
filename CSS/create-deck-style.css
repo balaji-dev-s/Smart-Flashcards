@@ -1,0 +1,74 @@
+#addCardBtn {
+  background-color: #26292B;
+  border-color: #a2b2ee;
+}
+
+#addCardBtn:hover {
+  background-color: #a2b2ee;
+  color: black !important;
+  cursor: url("/images/customCursor.png"), pointer;
+}
+
+#addCardBtn:active {
+  background-color: #849bec;
+  color: black !important;
+}
+
+#saveDeckBtn {
+  background-color: #26292B;
+  border-color: #a2b2ee;
+}
+
+#saveDeckBtn:hover {
+  background-color: #a2b2ee;
+  color: black !important;
+  cursor: url("/images/customCursor.png"), pointer;
+}
+
+#saveDeckBtn:active {
+  background-color: #849bec;
+  color: black !important;
+}
+
+#updateDeckBtn {
+  margin-left: 10px;
+  background-color: #26292B;
+  border-color: #a2b2ee;
+}
+
+#updateDeckBtn:hover {
+  background-color: #a2b2ee;
+  color: black !important;
+  cursor: url("/images/customCursor.png"), pointer;
+}
+
+.form-control:focus {
+  background-color: #e8e9eb !important;
+  color: #0c0c0c !important;
+}
+
+.form-control::placeholder {
+  color: #a2b2ee !important;
+}
+
+.questionInput,
+.answerInput {
+  background-color: #212529 !important;
+  color: #a2b2ee !important;
+  border: 1px solid #a2b2ee;
+}
+
+.questionInput:focus,
+.answerInput:focus {
+  background-color: #e8e9eb !important;
+  color: #0c0c0c !important;
+}
+
+.sortable-ghost {
+  opacity: 1;
+  background: #212529;
+}
+
+.card-item {
+  transition: transform 0.15s ease;
+}

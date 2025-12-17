@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #26292b;
+}
+
+body {
+  overflow-y: scroll;
+  background-color: var(--main-color);
+  cursor: url("/images/customCursor.png"), auto;
+}
+
+nav a{
+    cursor: url("/images/customCursor.png"), auto;
+}
+
+.navbar-brand:hover {
+  color: #a2b2ee;
+
+}
+
+#createDeckBtn {
+  background-color: #2e3239;
+  border-color: #a2b2ee;
+}
+
+#createDeckBtn:hover {
+  background-color: #a2b2ee;
+  color: black;
+  cursor: url("/images/customCursor.png"), pointer;
+}
+
+#createDeckBtn:active {
+  background-color: #849bec;
+  color: black;
+}
+
+#addFromLibraryBtn {
+  background-color: #2e3239;
+  border-color: #a2b2ee;
+}
+
+#addFromLibraryBtn:hover {
+  background-color: #a2b2ee;
+  color: black;
+  cursor: url("/images/customCursor.png"), pointer;
+}
+
+#addFromLibraryBtn:active {
+  background-color: #849bec;
+  color: black;
+}
+
+#hero-heading {
+  color: #a2b2ee;
+}
+
+.deck-card {
+  flex: 1;
+  min-width: 200px;
+}
+
+footer {
+  background-color: #212529;
+}
+
+.footer-link:hover {
+  opacity: 0.7 !important;
+
+}
+
+.card-body {
+  background-color: #a2b2ee;
+}
+
+.card {
+  background-color: #a2b2ee !important;
+}
+
+#delete-btn {
+  background-color: #26292b;
+  border: 0;
+}
+
+#delete-btn:hover {
+  background-color: #849bec;
+  color: black;
+  font-weight: 900;
+  cursor: url("/images/customCursor.png"), pointer;
+}
+
+#edit-btn {
+  background-color: #26292b;
+  border: 0;
+}
+
+#edit-btn:hover {
+  background-color: #849bec;
+  color: black;
+  font-weight: 900;
+  cursor: url("/images/customCursor.png"), pointer;
+}
+
+#viewbutton {
+  background-color: #26292b;
+  border: 0;
+}
+
+#viewbutton:hover {
+  background-color: #849bec;
+  color: black;
+  cursor: url("/images/customCursor.png"), pointer;
+
+}
+
+#exportButton {
+  background-color: #26292b;
+  border: 0;
+}
+
+#exportButton:hover {
+  background-color: #849bec;
+  color: black;
+  cursor: url("/images/customCursor.png"), pointer;
+
+}
+
+.ui-sortable-placeholder {
+  visibility: hidden;
+  width: 24rem;
+  height: 14rem;
+}
+
+
+#deckList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .1rem;
+}
+
+
+.deck-title-box {
+  width: 300px;
+  height: 100px;
+  margin-bottom: 10px;
+}

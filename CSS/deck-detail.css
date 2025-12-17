@@ -1,0 +1,373 @@
+#deckTitleDetail {
+  color: #a2b2ee !important;
+}
+
+#deckSubtitleDetail {
+  color: #a2b2ee !important;
+}
+
+/* ---------- Deck Stage ---------- */
+.deck-stage {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px 40px;
+}
+
+/* ---------- Flip Card ---------- */
+.flip-card {
+  width: 100%;
+  height: 360px;
+  perspective: 1200px;
+  position: relative;
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+  transform-origin: center center;
+  position: relative;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.flip-card-front {
+  background: #212529 !important;
+  color: #fff;
+  border: 1px solid #a2b2ee;
+}
+
+.flip-card-back {
+  background: #212529 !important;
+  color: #fff;
+  border: 1px solid #a2b2ee;
+  transform: rotateX(180deg);
+}
+
+.flip-card.learned .flip-card-front,
+.flip-card.learned .flip-card-back {
+  background: #a2b2ee !important;
+  color: #212529 !important;
+}
+
+/* ---------- Card Top Buttons (Easy/Hard) ---------- */
+.card-top-buttons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.card-top-buttons button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.card-top-buttons button:first-child {
+  background-color: #212529;
+  border: 1px solid #a2b2ee;
+  color: #fff;
+}
+
+.card-top-buttons button:last-child {
+  background-color: #212529;
+  border: 1px solid #a2b2ee;
+  color: #fff;
+}
+
+.card-top-buttons button:hover {
+  background-color: #849bec;
+  cursor: url("/images/customCursor.png"), pointer;
+}
+
+.flip-card[data-diff="easy"] .card-top-buttons button:first-child {
+  background-color: #1c7e35;
+  color: white;
+  font-weight: 700;
+  border: 0;
+}
+
+.flip-card[data-diff="hard"] .card-top-buttons button:last-child {
+  background-color: #b02611;
+  color: white;
+  font-weight: 700;
+  border: 0;
+}
+
+/* ---------- Arrows ---------- */
+.arrow-btn {
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arrow-btn:hover {
+  cursor: url("/images/customCursor.png"), pointer;
+}
+
+.left-arrow {
+  left: -60px;
+}
+
+.right-arrow {
+  right: -60px;
+}
+
+.arrow-btn::after {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 28px;
+  border-right: 6px solid #a2b2ee;
+  border-top: 6px solid #a2b2ee;
+  margin: auto;
+  margin-top: 26px;
+}
+
+.arrow-btn:hover::after {
+  border-right-color: #849bec;
+  border-top-color: #849bec;
+}
+
+.left-arrow::after {
+  transform: rotate(-135deg);
+}
+
+.right-arrow::after {
+  transform: rotate(45deg);
+}
+
+/* ---------- Progress Bar ---------- */
+.progress-track {
+  height: 6px;
+  border-color: #a2b2ee;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 3px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  transition: width 300ms ease;
+  background: linear-gradient(90deg, #849bec, #a2b2ee);
+}
+
+#trackToggle {
+  background-color: #55616c;
+  height: 40px;
+  width: 80px;
+  border-radius: 10px;
+  border-color: #a2b2ee;
+}
+
+#trackToggle:checked {
+  background-color: #a2b2ee;
+  border-color: #a2b2ee;
+}
+
+#trackToggle:focus {
+  box-shadow: none;
+}
+
+#markBtn {
+  background: #212529;
+  color: #a2b2ee;
+  border: 1px solid #a2b2ee;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+#markBtn i {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#markBtn:hover {
+  background: #a2b2ee;
+  color: #212529;
+  cursor: url("/images/customCursor.png"), pointer;
+}
+
+/* ---------- Overlay Modal / Completion Popup ---------- */
+.overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(6px) saturate(0.85);
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+}
+
+.hidden {
+  display: none;
+}
+
+.completionCard {
+  background: #2e2f31;
+  color: #fff;
+  padding: 36px;
+  border-radius: 16px;
+  text-align: center;
+  width: min(700px, 90%);
+  max-height: 70vh;
+  overflow-y: auto;
+  /* allow scrolling */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.completionCard::-webkit-scrollbar {
+  display: none;
+}
+
+
+#closeOverlay {
+  cursor: url("/images/customCursor.png"), pointer;
+}
+
+.completionContent h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.completionContent .timeTaken,
+.completionContent .easyCount,
+.completionContent .hardCount {
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+.card-summary {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 12px 16px;
+  margin: 8px 0;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.card-summary .q-label,
+.card-summary .a-label {
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.card-summary .q-text,
+.card-summary .a-text {
+  margin-left: 8px;
+  font-size: 15px;
+  color: #ccc;
+}
+
+.completionActions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.completionActions .btn {
+  min-width: 140px;
+  font-size: 16px;
+}
+
+#studyAgainBtn {
+  background-color: #a2b2ee;
+  border: 0;
+  cursor: url("/images/customCursor.png"), pointer;
+  color: #212529;
+}
+
+#studyAgainBtn:hover {
+  background-color: #849bec;
+  border: 0;
+}
+
+#goHomeBtn {
+  background-color: #a2b2ee;
+  border: 0;
+  cursor: url("/images/customCursor.png"), pointer;
+  color: #212529;
+}
+
+#goHomeBtn:hover {
+  background-color: #849bec;
+  border: 0;
+}
+
+
+/* ---------- Mobile tweaks ---------- */
+@media (max-width: 900px) {
+  .arrow-btn {
+    width: 50px;
+    height: 50px;
+    top: 45%;
+  }
+
+  .left-arrow {
+    left: 5px;
+  }
+
+  .right-arrow {
+    right: 5px;
+  }
+
+  .flip-card {
+    height: 300px;
+  }
+
+  .card-top-buttons {
+    top: 8px;
+    right: 8px;
+    gap: 6px;
+  }
+
+  .card-top-buttons button {
+    padding: 4px 10px;
+    font-size: 12px;
+  }
+
+  .completionCard {
+    padding: 28px;
+  }
+}

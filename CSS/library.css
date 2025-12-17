@@ -1,0 +1,12 @@
+.addDeckBtn{
+  background-color: #212529 !important;
+  border: 0;
+  cursor:url("/images/customCursor.png"),pointer !important;
+  transition: 0.15s;
+}
+
+.addDeckBtn:hover{
+  background-color:  #849bec !important;
+  color: #212529;
+  font-weight: 400;
+}

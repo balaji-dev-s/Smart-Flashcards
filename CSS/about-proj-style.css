@@ -1,0 +1,33 @@
+.heading{
+  color: #a2b2ee !important;
+}
+
+#web-tech-container{
+  display: flex;
+  column-gap: 5rem;
+}
+
+.color-palette-card{
+  width: 280px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.color-card-1{
+  background-color: #a2b2ee;
+}
+
+.color-card-2{
+  background-color: #849bec;
+}
+
+.color-card-3{
+  background-color: #212529 ;
+  border: 1px solid #a2b2ee;
+}
+
+.color-card-4{
+  background-color: #26292b;
+   border: 1px solid #a2b2ee;
+}
+
