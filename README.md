@@ -5,6 +5,8 @@ The goal of this project is simple: **make studying more effective and less over
 
 This application allows users to create, manage, and study flashcards in an intuitive and distraction-free environment while keeping all data safely stored in the browser.
 
+## Live Demo
+🔗 **Link:** https://smart-flashcards-eta.vercel.app/
 ---
 
 ## Key Features
